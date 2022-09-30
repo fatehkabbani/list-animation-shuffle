@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  color: #000000;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.menu .menu-item {
+  margin: 10px 50px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  width: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .menu-item li {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #000000;
+  list-style: none;
+}
+.menu .menu-item .elem {
+  opacity: 1;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.menu .menu-item:hover .par:nth-child(1) {
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+}
+.menu .menu-item:hover .par:nth-child(2) {
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+}
+.menu .menu-item:hover .par:nth-child(3) {
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
+}
+.menu .menu-item:hover .par:nth-child(4) {
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+.menu .menu-item:hover .par:nth-child(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.menu .menu-item:hover .par:nth-child(6) {
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
+}
+.menu .menu-item:hover .par:nth-child(7) {
+  -webkit-animation-delay: 0.84s;
+          animation-delay: 0.84s;
+}
+.menu .menu-item:hover .par:nth-child(8) {
+  -webkit-animation-delay: 0.96s;
+          animation-delay: 0.96s;
+}
+.menu .menu-item:hover .par:nth-child(9) {
+  -webkit-animation-delay: 1.08s;
+          animation-delay: 1.08s;
+}
+.menu .menu-item:hover .par:nth-child(10) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.menu .menu-item:hover .par:nth-child(11) {
+  -webkit-animation-delay: 1.32s;
+          animation-delay: 1.32s;
+}
+.menu .menu-item:hover .par:nth-child(12) {
+  -webkit-animation-delay: 1.44s;
+          animation-delay: 1.44s;
+}
+.menu .menu-item:hover .par {
+  -webkit-animation: onacPar 0.2s linear;
+          animation: onacPar 0.2s linear;
+}
+.menu .menu-item:hover .elem {
+  -webkit-animation: opacElem 0.84s linear forwards;
+          animation: opacElem 0.84s linear forwards;
+}
+@-webkit-keyframes onacPar {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes onacPar {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes opacElem {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+  }
+}
+@keyframes opacElem {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+  }
+}/*# sourceMappingURL=styles.css.map */

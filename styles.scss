@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000000;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  .menu-item {
+    margin: 10px 50px;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: center;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      position: absolute;
+      opacity: 0;
+      transition: all 0.2s linear;
+      color: #000000;
+      list-style: none;
+    }
+    .elem {
+      opacity: 1;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      @for $i from 1 through 12 {
+        .par:nth-child(#{$i}) {
+          animation-delay: $i * 0.12s;
+        }
+      }
+      .par {
+        animation: onacPar 0.2s linear;
+      }
+      .elem {
+        animation: opacElem .84s linear forwards;
+      }
+    }
+    @keyframes onacPar {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }
+    @keyframes opacElem {
+      0% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 0;
+      }
+      95% {
+        opacity: 0;
+      }
+      99% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
+      }
+    }
+  }
+}
